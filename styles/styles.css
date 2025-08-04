@@ -18,10 +18,13 @@
   --text-color: #131313;
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
+  --button-color: #da1710;
+  --button-hover-color: #e55d58;
+
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+  --body-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  --heading-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -35,6 +38,9 @@
   --heading-font-size-m: 27px;
   --heading-font-size-s: 24px;
   --heading-font-size-xs: 22px;
+
+  /* Button Sizes */
+  --button-font-size: 16px;
 
   /* nav height */
   --nav-height: 64px;
@@ -162,26 +168,26 @@ a:any-link {
 
 a:hover {
   color: var(--link-hover-color);
-  text-decoration: underline;
+  border-bottom: 3px solid var(--button-color);
+  padding: 24px 0 19px;
 }
 
 /* buttons */
 a.button:any-link,
 button {
   box-sizing: border-box;
-  display: inline-block;
-  max-width: 100%;
+  font-size: var(--button-font-size);
   margin: 12px 0;
   border: 2px solid transparent;
-  border-radius: 2.4em;
-  padding: 0.5em 1.2em;
+  border-radius: 2px;
+  padding: 5px 12px;
   font-family: var(--body-font-family);
   font-style: normal;
-  font-weight: 500;
-  line-height: 1.25;
+  font-weight: 400;
+  line-height: 1.5;
   text-align: center;
   text-decoration: none;
-  background-color: var(--link-color);
+  background-color: var(--button-color);
   color: var(--background-color);
   cursor: pointer;
   overflow: hidden;
@@ -193,8 +199,10 @@ a.button:hover,
 a.button:focus,
 button:hover,
 button:focus {
-  background-color: var(--link-hover-color);
-  cursor: pointer;
+    color: #fff;
+    border-color: var(--button-color);
+    background-color: var(--button-hover-color);
+    text-decoration: none;
 }
 
 button:disabled,
@@ -233,7 +241,7 @@ main > .section {
 }
 
 main > .section > div {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: auto;
   padding: 0 24px;
 }
