@@ -1,9 +1,8 @@
 # Your Project's Title...
-Your project's description...
-
+Westpac - Personal, Business and Corporate Banking
 ## Environments
-- Preview: https://main--{repo}--{owner}.aem.page/
-- Live: https://main--{repo}--{owner}.aem.live/
+- Preview: https://main--westpac-eds-main--capgemini-eds.aem.page/
+- Live: https://main--westpac-eds-main--capgemini-eds.aem.live/
 
 ## Documentation
 
