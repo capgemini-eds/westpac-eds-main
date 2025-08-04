@@ -1,5 +1,37 @@
 .tiles{
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 15px;
+    justify-content: space-around;
+    gap: 40px;
+
+    div{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        justify-content: flex-start;
+        width: max-content;
+        div{
+            display: flex;
+        }
+    }
+
+    ul{
+        margin: 0;
+        padding-inline-start: 0;
+    }
+    li{
+        list-style: none;
+    }
+
+    a:any-link{
+        color: rgb(24, 27, 37) !important;
+    }
+    a:hover{
+        border-bottom: unset;
+        text-decoration: underline ;
+    }
+    img{
+        width: 50px;
+    }
 }
