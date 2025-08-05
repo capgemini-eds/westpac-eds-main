@@ -1,23 +1,33 @@
+
 .app-spotlight {
     display: flex;
-    height: 100%;
-    max-height: 673px;
-    justify-content: space-evenly;
+    flex-direction: column;
+    height: auto;
+    max-height: none;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 24px;
 
     img {
-        height: 100%;
         width: 100%;
+        max-width: fit-content;
+        object-fit: cover;
+        height: auto;
+        max-height: 220px;
+        object-fit: cover;
+        border-radius: 12px;
     }
 
     .app-spotlight--text {
-        height: 70%;
-        width: 50%;
-        margin: 100px 0;
+        width: 100%;
+        margin: 24px 0;
+        height: auto;
     }
 
     .app-spotlight--buttons {
         display: flex;
-        gap: 20px;
+        flex-direction: column;
+        gap: 16px;
 
         .button-container:last-child {
             a {
@@ -32,5 +42,39 @@
                 text-decoration: none;
             }
         }
+    }
+}
+
+@media (min-width: 600px) {
+    .app-spotlight {
+        flex-direction: row;
+        height: 100%;
+        max-height: 673px;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 32px;
+    }
+    .app-spotlight img {
+        max-height: 100%;
+        border-radius: 16px;
+    }
+    .app-spotlight--text {
+        width: 50%;
+        margin: 100px 0;
+        height: 70%;
+    }
+    .app-spotlight--buttons {
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 900px) {
+    .app-spotlight img {
+        max-height: 100%;
+        border-radius: 20px;
+    }
+    .app-spotlight {
+        gap: 40px;
     }
 }
