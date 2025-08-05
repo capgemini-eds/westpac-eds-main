@@ -1,0 +1,36 @@
+.app-spotlight {
+    display: flex;
+    height: 100%;
+    max-height: 673px;
+    justify-content: space-evenly;
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .app-spotlight--text {
+        height: 70%;
+        width: 50%;
+        margin: 100px 0;
+    }
+
+    .app-spotlight--buttons {
+        display: flex;
+        gap: 20px;
+
+        .button-container:last-child {
+            a {
+                background-color: white;
+                color: black;
+                border: 1px solid red;
+            }
+            a:hover {
+                color: rgb(255, 255, 255);
+                background-color: rgb(229, 93, 88);
+                border-color: rgb(218, 23, 16);
+                text-decoration: none;
+            }
+        }
+    }
+}
