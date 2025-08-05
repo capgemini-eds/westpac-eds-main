@@ -1,18 +1,22 @@
 .tiles{
     position: relative;
-    display: grid;
-    font-size: 15px;
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     gap: 40px;
+    padding: 50px 0;
+    *{ font-size: 15px;}
 
     div{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 40px;
         justify-content: flex-start;
         width: max-content;
         div{
             display: flex;
+            flex-direction: row;
         }
     }
 
@@ -33,5 +37,32 @@
     }
     img{
         width: 50px;
+    }
+}
+@media (min-width: 600px) {
+    .tiles {
+        gap: 30px;
+        *{font-size: 24px;}
+    }
+    .tiles div {
+        flex-direction: row;
+        gap: 30px;
+    }
+    .tiles img {
+        width: 50px;
+        height: auto;
+    }
+}
+
+@media (min-width: 900px) {
+    .tiles {
+        gap: 40px;
+    }
+    .tiles div {
+        display: flex;
+        gap: 40px;
+        div{
+            display: flex;
+        }
     }
 }
