@@ -1,19 +1,109 @@
-.cards > ul {
+
+.cards{
+  position: relative;
+  ul{
+  position: relative;
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 24px;
+
+  li{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      height: 350px;
+
+  }
+    li > div{
+      display: flex;
+      flex-direction: column;
+    }
+
+  }
+
+  .button:any-link{
+    background-color: unset;
+    color: black;
+    white-space: wrap;
+  }
+  .button:any-link:hover, a:any-link:hover{
+    border: 0;
+    border-bottom: 0;
+    padding:0;
+  }
+
+  .cards-card-body{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px;
+
+    h1,h2,h3{
+      color: black;
+    }
+
+    a, .button{
+      width: 100%;
+      height: 100%;
+      display: block;
+      text-align: start;
+      margin:0;
+      padding:0;
+      line-height: normal;
+      border: 0;
+      color: black;
+
+    }
+  }
+  .cards-card-image{
+    line-height: 0;
+    width: 100%;
+    height: 60%;
+    img{
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+  }
+
+}
+
+
+
+
+/* 
+
+
+.cards > ul {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 24px;
 }
 
 .cards > ul > li {
   border: 1px solid #dadada;
   background-color: var(--background-color);
+    border-radius: 10px;
+
 }
 
 .cards .cards-card-body {
   margin: 16px;
+
+  .button{
+    background-color: unset;
+    color: black;
+  }
+  .button-hover{
+    border:unset;
+  }
 }
 
 .cards .cards-card-image {
@@ -24,4 +114,4 @@
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
-}
+} */
