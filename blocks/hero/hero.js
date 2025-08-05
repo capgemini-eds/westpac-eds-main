@@ -2,11 +2,14 @@ import { buildBlock, createOptimizedPicture } from "../../scripts/aem.js";
 
 export default function decorate(block) {
   const heroBannerBlock = [];
+  const blockClassList = block.classList;
 
   // Create a new div for the hero banner
   // and append the first child of the block to it
   const heroBanner = document.createElement("div");
   heroBanner.classList.add("hero-banner");
+  heroBanner.classList.add(...blockClassList);
+  
   heroBanner.append(block.firstElementChild);
   heroBanner.firstElementChild.classList.add("hero-banner--elements");
 
