@@ -5,13 +5,22 @@
     flex-direction: column;
     margin: 72px 32px;
     padding-inline: 12px;
+    color: #2a2e42;
+
 
     h1,h2,h3{
         font-size: 40px;
         text-align: center;
         padding-bottom: 20px;
 
+        strong{
+            background-image: linear-gradient(98.02deg, #991AD6 -2.41%, #DA1710 112.37%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
     }
+
 
 
     div:nth-child(2) {
