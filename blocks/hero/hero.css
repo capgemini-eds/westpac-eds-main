@@ -6,7 +6,7 @@
     img {
         width: 100%;
         height: auto;
-        max-height: 420px;
+        max-height: 430px; 
         border-radius: 12px;
         object-fit: cover;
         object-position: center center;
@@ -30,7 +30,7 @@
         h2,
         h3,
         h4 {
-            font-size: 24px;
+            font-size: 28px;
             line-height: 90%;
             text-transform: uppercase;
 
@@ -40,7 +40,7 @@
         }
         p {
             font-size: 14px;
-            font-weight: 300;
+            font-weight: 400;
         }
     }
     .button-container {
@@ -59,8 +59,8 @@
     }
 }
  .hero-wrapper:has(.hero-full) {
-        margin: 0;
-        padding: 0;
+        /* margin: 0;
+        padding: 0; */
         border-radius: 0px !important;
         text-align: left;
 
@@ -74,7 +74,7 @@
             
 
             h1,h2,h3,h4 {
-                font-size: 40px;
+                font-size: 24px;
                 line-height: 1.25;
             }
             p {
@@ -106,12 +106,13 @@
 }
 
 @media (min-width: 1024px) {
+
     .hero-banner-block img {
         max-height: 470px;
         border-radius: 20px;
     }
     .hero-banner-block .hero-overlay {
-        max-width: 40%;
+        max-width: 50%;
         font-size: 20px;
         margin: 4rem;
     }
@@ -120,11 +121,26 @@
     .hero-banner-block .hero-overlay h3,
     .hero-banner-block .hero-overlay h4 {
         font-size: 50px;
-        line-height: 1.25;
+        line-height: 90%;
+        margin-top: 0;
+        letter-spacing: -3.45px;
+        font-weight: bold;
     }
     .hero-banner-block .hero-overlay p {
-        font-size: 20px;
+        font-size: 24px;
     }
+    .hero-wrapper:has(.hero-full) {
+      .hero-overlay {
+         
+          h1,h2,h3,h4 {
+              font-size: 40px;
+              line-height: 1.25;
+          }
+          p {
+              font-size: 24px;
+          }
+      }
+  }
    
 }
 
