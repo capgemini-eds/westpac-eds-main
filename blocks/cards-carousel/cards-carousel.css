@@ -8,6 +8,7 @@
     overflow-x: scroll;
     scrollbar-width: none; 
     -ms-overflow-style: none;
+    background-color: transparent;
 
     > div{
         display: flex;
@@ -16,6 +17,7 @@
         min-width: 120px;
         flex-wrap: wrap;
         flex-direction: row;
+        background-color: #fff;
         border-radius: 20px;
         padding: 15px 15px;
         /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); */
